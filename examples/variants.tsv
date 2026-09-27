@@ -1,0 +1,5 @@
+chrom	pos	ref	alt	source_sample_id	callset
+chr1	50	A	G	bulk_library	demo
+chr1	200	A	G	bulk_library	demo
+chr1	400	A	G	bulk_library	demo
+chr1	50	A	G	duplex_library	demo

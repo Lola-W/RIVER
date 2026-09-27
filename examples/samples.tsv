@@ -1,0 +1,5 @@
+sample_id	method	type	bam	bam_state
+bulk_library	IlluminaSeq	bulk	bams/bulk.bam	
+duplex_library	ppmSeq	duplex	bams/duplex.bam	raw
+cell_01	PTA-Seq	single_cell	bams/cell_01.bam	
+cell_02	PTA-Seq	single_cell	bams/cell_02.bam	

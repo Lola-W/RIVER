@@ -1,0 +1,3 @@
+source_sample_id	source_method	callset	n_variants	n_support_0	n_support_1	n_support_ge2	proportion_support_0	proportion_support_1	proportion_support_ge2
+bulk_library	IlluminaSeq	demo	3	1	1	1	0.3333333333333333	0.3333333333333333	0.3333333333333333
+duplex_library	ppmSeq	demo	1	0	0	1	0.0	0.0	1.0

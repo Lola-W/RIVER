@@ -1,0 +1,13 @@
+chrom	pos	ref	alt	sample_id	method	type	ref_count	alt_count	depth	vaf	lower_ci	upper_ci	qualifying_support	query_status	coverage_status	ref_forward	ref_reverse	ref_unclassified	alt_forward	alt_reverse	alt_unclassified
+chr1	50	A	G	bulk_library	IlluminaSeq	bulk	8	2	10	0.2	0.05668215145437522	0.5098375284633582	1	queried	covered	4	4	0	1	1	0
+chr1	200	A	G	bulk_library	IlluminaSeq	bulk	8	2	10	0.2	0.05668215145437522	0.5098375284633582	1	queried	covered	4	4	0	1	1	0
+chr1	400	A	G	bulk_library	IlluminaSeq	bulk	0	0	0	NA	NA	NA	0	no_pileup_observations	no_ref_alt_depth	0	0	0	0	0	0
+chr1	50	A	G	duplex_library	ppmSeq	duplex	8	2	10	0.2	0.05668215145437522	0.5098375284633582	1	queried	covered	4	4	0	1	1	0
+chr1	200	A	G	duplex_library	ppmSeq	duplex	8	2	10	0.2	0.05668215145437522	0.5098375284633582	1	queried	covered	4	4	0	1	1	0
+chr1	400	A	G	duplex_library	ppmSeq	duplex	0	0	0	NA	NA	NA	0	no_pileup_observations	no_ref_alt_depth	0	0	0	0	0	0
+chr1	50	A	G	cell_01	PTA-Seq	single_cell	0	1	1	1.0	0.20654931437723742	1.0	1	queried	covered	0	0	0	1	0	0
+chr1	200	A	G	cell_01	PTA-Seq	single_cell	1	0	1	0.0	0.0	0.7934506856227626	0	queried	covered	1	0	0	0	0	0
+chr1	400	A	G	cell_01	PTA-Seq	single_cell	0	0	0	NA	NA	NA	0	no_pileup_observations	no_ref_alt_depth	0	0	0	0	0	0
+chr1	50	A	G	cell_02	PTA-Seq	single_cell	0	1	1	1.0	0.20654931437723742	1.0	1	queried	covered	0	0	0	1	0	0
+chr1	200	A	G	cell_02	PTA-Seq	single_cell	1	0	1	0.0	0.0	0.7934506856227626	0	queried	covered	1	0	0	0	0	0
+chr1	400	A	G	cell_02	PTA-Seq	single_cell	0	0	0	NA	NA	NA	0	no_pileup_observations	no_ref_alt_depth	0	0	0	0	0	0

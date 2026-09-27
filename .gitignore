@@ -1,0 +1,22 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.venv/
+build/
+dist/
+*.bam
+*.bai
+*.csi
+*.cram
+*.crai
+*.fa
+*.fasta
+*.fai
+*.log
+river_results/
+examples/demo/
+
+# macOS metadata
+.DS_Store
+._*

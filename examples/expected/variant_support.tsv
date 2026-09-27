@@ -1,0 +1,5 @@
+chrom	pos	ref	alt	source_sample_id	source_method	callset	supporting_samples	supporting_methods	supporting_cells_by_method	supporting_cell_counts_by_method	supporting_cell_classes_by_method	other_supporting_methods	n_other_supporting_methods	other_method_support_class
+chr1	50	A	G	bulk_library	IlluminaSeq	demo	"[""bulk_library"",""cell_01"",""cell_02"",""duplex_library""]"	"[""IlluminaSeq"",""PTA-Seq"",""ppmSeq""]"	"{""PTA-Seq"":[""cell_01"",""cell_02""]}"	"{""PTA-Seq"":2}"	"{""PTA-Seq"":"">=2""}"	"[""PTA-Seq"",""ppmSeq""]"	2	>=2
+chr1	200	A	G	bulk_library	IlluminaSeq	demo	"[""bulk_library"",""duplex_library""]"	"[""IlluminaSeq"",""ppmSeq""]"	"{""PTA-Seq"":[]}"	"{""PTA-Seq"":0}"	"{""PTA-Seq"":""0""}"	"[""ppmSeq""]"	1	1
+chr1	400	A	G	bulk_library	IlluminaSeq	demo	[]	[]	"{""PTA-Seq"":[]}"	"{""PTA-Seq"":0}"	"{""PTA-Seq"":""0""}"	[]	0	0
+chr1	50	A	G	duplex_library	ppmSeq	demo	"[""bulk_library"",""cell_01"",""cell_02"",""duplex_library""]"	"[""IlluminaSeq"",""PTA-Seq"",""ppmSeq""]"	"{""PTA-Seq"":[""cell_01"",""cell_02""]}"	"{""PTA-Seq"":2}"	"{""PTA-Seq"":"">=2""}"	"[""IlluminaSeq"",""PTA-Seq""]"	2	>=2
