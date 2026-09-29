@@ -1,4 +1,36 @@
 #!/usr/bin/env python3
+"""
+vcf_to_vcf_overlap_filter.py
+
+Purpose:
+    Remove variants from an input VCF that also appear in a second
+    ("filter") VCF. Variants are matched by exact CHROM, POS, REF and ALT.
+
+Usage:
+    python vcf_to_vcf_overlap_filter.py \
+        --input-vcf  <input.vcf[.gz]> \
+        --filter-vcf <filter.vcf[.gz]> \
+        --output-vcf-gz <output.vcf.gz>
+
+Inputs:
+    --input-vcf      VCF to be filtered (plain or gzipped)
+    --filter-vcf     VCF listing variants to remove (plain or gzipped)
+
+Output:
+    --output-vcf-gz  Filtered VCF, bgzipped and tabix-indexed (.tbi)
+
+Notes:
+    - For multi-allelic records, the whole record is removed if ANY of its
+      ALT alleles matches an entry in the filter VCF.
+    - CHROM naming (e.g. "chr1" vs "1") must be identical in both files.
+    - The filter VCF is held in memory as a set, so memory use scales with
+      the number of filter variants (relevant for gnomAD).
+
+Pipeline context:
+    Snakemake rules step01_germline, step05_pon and step06_gnomad
+    (filter VCF = germline calls, panel of normals and gnomAD, respectively).
+"""
+
 import argparse
 import gzip
 import subprocess
@@ -66,6 +98,7 @@ def filter_vcf_to_temp(input_vcf, filter_keys, temp_vcf):
             if len(fields) < 5:
                 continue
             n_total += 1
+            
             if any(key in filter_keys for key in variant_keys(fields)):
                 n_removed += 1
                 continue  # Skip writing to output
