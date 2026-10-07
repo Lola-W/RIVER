@@ -1,4 +1,4 @@
-# RIVER
+<img width="1827" height="852" alt="image" src="https://github.com/user-attachments/assets/c40b80b4-44e4-4662-a496-087236ded7eb" /># RIVER
 
 **Read-level Integration for Variant Evidence Recovery**
 
@@ -294,6 +294,11 @@ sbatch --account=ACCOUNT --partition=PARTITION scripts/test.sbatch
 ```
 
 Set `RIVER_PYTHON` to your Python executable and `RIVER_TEST_SAMTOOLS` if SAMtools is not on `PATH`. Outside a cluster, the same suite can be run with `PYTHONPATH=src python -m unittest discover -s tests -v`.
+
+## Contact info
+
+- Jiaming Weng: jmweng@ucsd.edu
+- Dr. Do Hyeon Cha: eric6890@gmail.com
 
 ## License
 
