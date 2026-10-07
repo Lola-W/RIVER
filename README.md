@@ -298,7 +298,7 @@ Set `RIVER_PYTHON` to your Python executable and `RIVER_TEST_SAMTOOLS` if SAMtoo
 ## Contact info
 
 - Jiaming Weng: jmweng@ucsd.edu
-- Dr. Do Hyeon Cha: eric6890@gmail.com
+- Dr. Do Hyeon Cha: eric1@kaist.ac.kr
 
 ## License
 
