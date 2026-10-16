@@ -1,4 +1,4 @@
-<img width="1827" height="852" alt="image" src="https://github.com/user-attachments/assets/c40b80b4-44e4-4662-a496-087236ded7eb" /># RIVER
+# RIVER
 
 **Read-level Integration for Variant Evidence Recovery**
 
